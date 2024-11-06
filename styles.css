@@ -1,0 +1,34 @@
+html {
+    font-family: 'Playwrite GB S', serif;
+}
+
+* {
+    padding: 0 10px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 239, 239);
+}
+.header {
+    font-size: 24px;
+    font-family: 'Bungee Shade', sans-serif;
+    color: rgb(78, 151, 151);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header,
+main,
+footer {
+    /* max-width: 800px; */
+    width: 100%;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
