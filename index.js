@@ -16,10 +16,14 @@ showEnterTodo.addEventListener('click', renderListPage);
 function addTodoList(event) {
     event.preventDefault();
     let inputValue = userInput.value;
-    todos.push(inputValue);
-    todoList.innerHTML = ' ';
-    renderTodos();
-    userInput.value = '';
+    if (!inputValue) {
+        alert('Add a valid text');
+    } else {
+        todos.push(inputValue);
+        todoList.innerHTML = ' ';
+        renderTodos();
+        userInput.value = '';
+    }
 }
 addButton.addEventListener('click', addTodoList);
 
