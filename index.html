@@ -27,10 +27,62 @@
     <body>
         <header class="header">
             <h1>Todos</h1>
-            <i class="fa-solid fa-plus plusIcon"></i>
+            <i class="fa-solid fa-plus plusIcon" id="plusIcon"></i>
         </header>
-        <main>Main</main>
-        <footer>footer</footer>
+        <main class="main">
+            <!-- <div class="inputField">
+                <input
+                    type="text"
+                    class="input"
+                    placeholder="Create your list"
+                />
+            </div>
+            <p id="toDoList">1) Do exercise</p>
+            <div class="deleteEditIcon">
+                <i class="fa-solid fa-trash deleteIcon" id="delete"></i>
+                <i class="fa-solid fa-pen-to-square editIcon" id="edit"></i>
+            </div> -->
+            <section class="input" id="enterTodo">
+                <input
+                    type="text"
+                    class="textInput"
+                    placeholder="Create your Todos..."
+                    id="textInput"
+                />
+                <button
+                    title="add"
+                    class="addButton"
+                    id="addButton"
+                    type="button"
+                >
+                    Add
+                </button>
+            </section>
+            <section>
+                <p id="todoList"></p>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <h4>
+                    This app was created by
+                    <a
+                        href="https://www.linkedin.com/in/jenice-martin-781a43185/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Jenice Martin,</a
+                    >
+                    and is Open Sorced on<a
+                        href="https://github.com/Jenice15/ToDoList"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub
+                    </a>
+                </h4>
+            </div>
+        </footer>
     </body>
     <script src="index.js"></script>
 </html>
