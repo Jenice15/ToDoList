@@ -3,7 +3,7 @@ html {
 }
 
 * {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     transition-duration: 300ms;
 }
 
@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(229, 239, 239);
+    margin: 0;
 }
 header,
 main,
@@ -100,4 +101,19 @@ a {
     font-size: 12px;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .header {
+        position: relative;
+        left: -15px;
+    }
+    .plusIcon {
+        position: relative;
+        left: -20px;
+    }
+    /* 
+    footer {
+        padding-left: -10px;
+    } */
 }
